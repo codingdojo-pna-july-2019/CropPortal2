@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CropPortalMain.css') }}">
+    <title>Crop Portal</title>
+</head>
+<body>
+    <a href="/logout" class="link-lable">logout</a>
+    <a href="/addtoDB"class="link-lable">Add to Database</a>
+    <h1>Crop Portal</h1>
+    <form action="/YearMap" method= "POST">
+        <div class= "form-lable"> 
+            <p>Search Year:<input class ="input-lable" type= "text" name= "year"><input class="search-lable" type = "submit" value="Search"></p>
+        </div>
+    </form>
+    <form action="/CropMap" method= "POST">
+        <div class= "form-lable">
+            <p>Search Crop:<input class ="input-lable" type= "text" name= "crop"><input class="search-lable" type = "submit" value="Search"></p>
+        </div>
+    </form>
+    <map name="image-map">
+        <area target="_blank" alt="field-4025" title="field-4025" href="/field/4025" coords="417,138,431,179" shape="rect">
+        <area target="_blank" alt="field-4024" title="field-4024" href="/field/4024" coords="432,140,451,179" shape="rect">
+        <area target="_blank" alt="field-4022" title="field-4022" href="/field/4022" coords="452,140,467,177" shape="rect">
+        <area target="_blank" alt="field-4019" title="field-4019" href="/field/4019" coords="469,140,480,177" shape="rect">
+        <area target="_blank" alt="field-4008" title="field-4008" href="/field/4008" coords="483,135,507,155" shape="rect">
+        <area target="_blank" alt="field-4003" title="field-4003" href="/field/4003" coords="508,135,531,163" shape="rect">
+        <area target="_blank" alt="field-4033" title="field-4033" href="/field/4033" coords="532,136,556,166" shape="rect">
+        <area target="_blank" alt="field-4027" title="field-4027" href="/field/4027" coords="557,135,578,152" shape="rect">
+        <area target="_blank" alt="field-4027-1" title="field-4027-1" href="/field/4027-1" coords="558,154,579,169" shape="rect">
+        <area target="_blank" alt="field-4005" title="field-4005" href="/field/4005" coords="418,180,450,206" shape="rect">
+        <area target="_blank" alt="field-4014-1" title="field-4014-1" href="/field/4014-1" coords="452,180,460,208" shape="rect">
+        <area target="_blank" alt="field-4014" title="field-4014" href="/field/4014" coords="464,181,483,207" shape="rect">
+    </map>
+    <img src="{{ url_for('static', filename='images/1.jpg') }}" usemap="#image-map">
+</body>
+</html>

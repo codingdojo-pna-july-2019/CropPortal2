@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CropPortalMain.css') }}">
+    <title>{{crop['crop_name']}} Map</title>
+</head>
+<body>
+        <a href="/back2" class="link-lable">Back</a>
+        <h1>Welcome to Crop: {{crop['crop_name']}}</h1>
+        <img src="{{ url_for('static', filename='images/1.jpg') }}">
+</body>
+</html>

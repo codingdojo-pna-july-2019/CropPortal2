@@ -1,0 +1,57 @@
+img {
+    width:100%;
+    height: auto;
+}
+
+body{
+    background-color:  #3b5998;
+    margin-top: 22px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 150%;
+}
+h1{
+    color: white;
+    text-align: center; 
+}
+input {
+    margin: 1rem;
+
+}
+
+.form-lable {
+    border-radius: 2rem;
+}
+.input-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 5rem;
+}
+
+.search-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 5rem;
+}
+
+.link-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 5rem;
+    text-decoration: none;
+    background-color: white;
+    margin-top: 5px;
+}

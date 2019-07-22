@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='edit.css') }}">
+    <title>Edit Page</title>
+</head>
+<body>
+    <a href="/back2" id="back" class="link-lable">Back</a>
+    <div class ="mainbody">
+        <h1>Welcome to Edit Page</h1>
+        <form action="/addCrop" method="POST">
+            <div class= "form-lable"> 
+                <p>Add a Crop:<input class ="input-lable" type="text" name="newcrop"></p>
+                <input class="search-lable" type = "submit" value="Add">
+            </div>
+        </form>
+        <form action="/addField" method="POST">
+            <div class= "form-lable"> 
+                <p>Add a Field:<input class ="input-lable" type="text" name="newfield"></p>
+                <input class="search-lable" type = "submit" value="Add">
+            </div>
+        </form>
+        {% with messages = get_flashed_messages() %}     
+            {% if messages %}                            
+                {% for message in messages %}            
+                    <p>{{message}}</p>                   
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="/addHarvest" method= "POST">
+            <div class= "form-lable"> 
+                Add a year:<input class ="input-lable" type="text" name="newYear">
+                Add a yield:<input class ="input-lable" type="text" name="newYield">
+                Field:<input class ="input-lable" type="text" name="fieldname">
+                Crop:
+                <select class ="input-lable" name="crop">
+                        <option value="potatoe">Potatoe</option>
+                        <option value="onion">Onion</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="lettuce">Lettuce</option>
+                        <option value="garlic">Garlic</option>
+                        <option value="barley">Barley</option>
+                        <option value="alfalfa">Alfalfa</option>
+                </select>
+                <input class="search-lable" type = "submit" value="Add">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

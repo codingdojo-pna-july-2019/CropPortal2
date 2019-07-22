@@ -1,0 +1,47 @@
+body {
+    background-image: url(images/fields.jpg);
+    background-repeat: no-repeat;
+}
+h1{
+    margin: 0px;
+}
+#back{
+    position: fixed;
+    top: 1;
+    left: 1;
+}
+p{
+    display: inline-block;
+}
+.mainbody{
+    text-align: center;
+}
+
+.link-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 3rem;
+    text-decoration: none;
+    background-color: white;
+}
+
+.form-lable {
+    border-radius: 2rem;
+}
+.input-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 3rem;
+}
+
+.search-lable{
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    border-radius: 3rem;
+}
